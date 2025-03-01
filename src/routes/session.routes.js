@@ -7,8 +7,6 @@ import {createHash, isValidPassword} from '../utils.js'
 //parte2
 import passport from "passport";
 
-
-
 const router = Router();
 
 

@@ -4,7 +4,7 @@ import {Strategy as GoogleStrategy} from 'passport-google-oauth2'
 
 import userModel from "../models/users.models.js";
 import {createHash, isValidPassword} from '../utils/index.js';
-import entorno from "./config/env.js";
+import entorno from "./env.js";
 //import {createHash, isValidPassword} from '../utils.js'
 import { request } from "express";
 

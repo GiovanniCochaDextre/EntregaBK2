@@ -4,12 +4,13 @@ import {Strategy as GoogleStrategy} from 'passport-google-oauth2'
 
 import userModel from "../models/users.models.js";
 import {createHash, isValidPassword} from '../utils/index.js';
+import entorno from "./config/env.js";
 //import {createHash, isValidPassword} from '../utils.js'
 import { request } from "express";
 
 
-const clientGoogle = "412479791105-vuoqdc9gia73kvr8jgrh4g17vf13meni.apps.googleusercontent.com"
-const secretGoogle = "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"
+const clientGoogle = entorno.client_google; //"412479791105-vuoqdc9gia73kvr8jgrh4g17vf13meni.apps.googleusercontent.com"
+const secretGoogle = entorno.secret_google;  //"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"
 const localStrategy = local.Strategy;
 
 const initializePassport = () => {

@@ -12,4 +12,6 @@ export default {
   firma_cookie: process.env.FIRMA_COOKIE,
   firma_JWT: process.env.JWT_SECRET,
   clave_session_cookie: process.env.CLAVE_SESSION_COOKIE,
+  client_google: process.env.CLIENTGOOGLE,
+  secret_google: process.env.SECRETGOOGLE,
 };

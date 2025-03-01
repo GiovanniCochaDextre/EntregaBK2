@@ -1,0 +1,21 @@
+<h1>{{tittle}}</h1>
+
+{{!-- <form action="/api/sessions/recupero" method="post"></form> --}}
+<form action="/api/users/recupero" method="post">
+    <div>
+        <div>
+            <label for="email">Email:</label>
+            <br />
+            <input type="email" id="email" name="email" placeholder="example@mail.com" />
+        </div>
+
+        <div>
+            <label for="password">Nuevo Password:</label>
+            <br />
+            <input type="password" id="password" name="password" placeholder="*****" />
+        </div>
+        <br />
+        <button type="submit">Recuperar Password</button>
+    </div>
+</form>
+¿No tienes cuenta?<a href="/register">Registrar</a>

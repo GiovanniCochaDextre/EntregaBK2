@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<div class="results">
+  {{#each users}}
+  <div class="card card-sm">
+    <p><strong>FIRSTNAME: </strong>{{this.first_name}} </p>
+    <p><strong>LASTNAME: </strong>{{this.last_name}} </p>
+    <p><strong>E-MAIL: </strong>{{this.email}} </p>
+    <p><strong>ROLE: </strong>{{this.role}} </p>
+  </div>
+  {{/each}}
+</div>
+<form action="/api/users/logout" method="post">
+  <button type="submit">Salir</button>
+</form>
